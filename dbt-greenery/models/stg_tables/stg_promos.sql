@@ -13,7 +13,7 @@ with promos_source as (
     SELECT 
         id as promo_id
         ,promo_id as promo_guid
-        ,discount
+        ,discout as discount
         ,status
         
     FROM promos_source
