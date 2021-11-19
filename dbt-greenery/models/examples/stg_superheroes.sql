@@ -17,4 +17,4 @@ SELECT
     alignment,
     NULLIF(weight, -99) AS weight_lbs,
     {{ lbs_to_kgs('weight') }} AS weight_kg
-FROM {{ source('tutorial', 'superheroes') }}
+FROM {{ source('src_public', 'superheroes') }}
