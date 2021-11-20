@@ -24,9 +24,7 @@
             FROM stg_orders
             WHERE status = 'delivered' 
 ### Question 4: How many users have only made one purchase? Two purchases? Three+ purchases?
-#### Answer:  * one purchase = 25 
-                * two purchases = 22 
-                * three or more purchases = 81
+#### Answer: one purchase = 25 | two purchases = 22 | three or more purchases = 81
 #### Query: 
             WITH order_count as (   
                 SELECT COUNT(*) as num_purchases, user_guid 
