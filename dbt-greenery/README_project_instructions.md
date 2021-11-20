@@ -1,10 +1,8 @@
-Welcome to your new dbt project!
+#Project Instructions
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
+* Please, go to dbt-greenery/models/stg_tables - this folder will contain all staging models.
+* To check snapshots configurations, go to dbt-greenery/snaphots.
+* The answers to projects questions are in dbt-greenery/models/week1/README_week_1_project.md
 
 
 ### Resources:

@@ -1,7 +1,7 @@
 {{
   config(
     materialized='table',
-    unique_key='order_id'
+    unique_key='order_item_id'
   )
 }}
 
@@ -11,7 +11,7 @@ with order_items_source as (
 
 , renamed_casted as (
     SELECT 
-        id as order_items_id
+        id as order_item_id
         ,order_id as order_guid
         ,product_id as product_guid
         ,quantity
