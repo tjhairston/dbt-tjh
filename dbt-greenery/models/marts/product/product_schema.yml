@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: dim_events
+    description: "contains page view event data from the events stage"
+    columns:
+      - name: event_guid
+        description: primary key
+        tests: 
+          - unique
+          - not_null
+      - name: session_guid
+        tests: 
+          - not_null
+      - name: user_guid
+        tests: 
+          - not_null
+
+  - name: fact_page_views
+    description: "aggreated table of count of page_events by date"
+    columns:
+      - name: session_guid
+        description: primary_key
+        tests: 
+          - not_null
+      - name: user_guid
+        tests: 
+          - not_null
+      - name: count_delete_from_cart
+        tests:
+          - not_null
+      - name: count_delete_from_cart
+        tests:
+          - not_null
+      - name: count_checkout
+        tests:
+          - not_null
+      - name: total_views
+        tests:
+          - not_null
+      - name: count_add_to_cart
+        tests:
+          - not_null
+      - name: count_package_shipped
+        tests:
+          - not_null
+      - name: count_account_created
+        tests:
+          - not_null
