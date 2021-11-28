@@ -1,6 +1,6 @@
 {{
   config(
-    materialized='table'
+    materialized='table' ,
     primary_key ='product_id'
   )
 }}

@@ -5,7 +5,7 @@
 }}
 
 SELECT
-   oi.order_item_id
+   oi.order_guid
   ,oi.product_guid
   ,oi.quantity
   ,o.user_guid
@@ -35,7 +35,7 @@ FROM {{ ref('stg_order_items') }} oi
 WHERE order_total > 0
 
 GROUP BY 
-    oi.order_item_id
+    oi.order_guid
     ,o.user_guid
     ,order_created_at_utc
     ,order_delivered_at_utc

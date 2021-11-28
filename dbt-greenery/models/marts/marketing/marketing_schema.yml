@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: int_user_order_facts
-    description: "Contains order information at the user level"
+  - name: user_order_facts
+    description: "fact model containing order information at the user level"
     columns:
       - name: user_guid
         description: primary key
@@ -13,39 +13,39 @@ models:
           to: ref('dim_users')
           field: user_guid
       - name: count_orders  
-        description: "Total orders placed from user"
+        description: "total orders by user"
         tests:
           - positive_values
-      - name: avg_cost_order
-        description: "Avg cost order per user: order total - discount/shipping"
+      - name: avg_order_cost
+        description: "avgerage cost order per user (order total - discount - shipping cost)"
         tests:
           - positive_values
       - name: avg_order_total
-        description: "Avg final order price"
+        description: "avgerage order total (order cost + shipping)"
         tests:
-          - not_null
           - positive_values
-      - name: avg_basket_size
-        description: "Avg count of items per order"
+          - not_null          
+      - name: avg_cart_size_per_order
+        description: "avgerage count of items per order"
         tests:
           - positive_values
       - name: count_orders_shipped
-        description: "Count orders where status is shipped"
+        description: "count of orders: order status is shipped"
         tests:
           - positive_values
       - name: count_orders_pending
-        description: "Count orders where status is pending"
+        description: "count of orders where status is pending"
         tests:
           - positive_values
       - name: count_orders_preparing
-        description: "Count orders where status is preparing"
+        description: "count of orders where status is preparing"
         tests:
           - positive_values
       - name: count_orders_delivered
-        description: "Count orders where status is delivered"
+        description: "count of orders where status is delivered"
         tests:
           - positive_values
-      - name: orders_with_promo
-        description: "Count orders with promo"
+      - name: count_orders_with_promo
+        description: "count of orders using promo codes"
         tests:
           - positive_values

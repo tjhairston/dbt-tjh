@@ -28,13 +28,13 @@ models:
   - name: fact_orders
     description: "model contains order inforamation at the product level: including price, promotion, time to delivery, etc"
     columns:
-      - name: order_item_id
+      - name: order_guid
         description: primary key
         tests:
           - not_null
         relationships:
           to: ref('stg_order_item')
-          field: order_item_id
+          field: order_guid
       - name: user_guid
         relationships:  
           to: ref('stg_users')
