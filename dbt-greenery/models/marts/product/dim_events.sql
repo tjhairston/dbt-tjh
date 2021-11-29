@@ -1,7 +1,7 @@
 {{
   config(
     materialized='table',
-    unique_key='event_id'
+    unique_key='event_guid'
   )
 }}
 
