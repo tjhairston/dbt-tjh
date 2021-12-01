@@ -5,8 +5,7 @@
 }}
 
 SELECT
-     du.user_id
-    ,du.user_guid
+    du.user_guid
     ,du.first_name
     ,du.last_name
     ,du.email
@@ -16,7 +15,7 @@ SELECT
     ,du.zipcode
     ,du.state
     ,du.country
-    ,du.created_at_utc
+    ,du.user_created_at_utc
     ,du.updated_at_utc
     ,du.customer_tenure
     ,MIN(fo.order_created_at_utc) as first_order_created_at_utc
@@ -36,8 +35,7 @@ FROM {{ ref('fact_orders') }} fo
     on fo.user_guid = du.user_guid
 
 GROUP BY
-    du.user_id
-    ,du.user_guid
+    du.user_guid
     ,du.first_name
     ,du.last_name
     ,du.email
@@ -47,6 +45,6 @@ GROUP BY
     ,du.state
     ,du.country
     ,du.phone_number
-    ,du.created_at_utc
+    ,du.user_created_at_utc
     ,du.updated_at_utc
     ,du.customer_tenure

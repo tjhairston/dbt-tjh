@@ -33,6 +33,7 @@
         - Lastly, I created a dim_events and a fact_page_view to which page information was captured along with event data and aggerated session information and event information by user. A key part of this section was to summarize page status information. 
 ### Use the dbt docs to visualize your model DAGs to ensure the model layers make sense
     - Paste in an image of your DAG from the docs
+    
 
 
 # PART 2 - Tests

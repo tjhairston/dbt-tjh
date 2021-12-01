@@ -64,3 +64,17 @@ models:
         tests: 
           - not_null
           - positive_values
+
+  - name: int_order_quantity_details
+    description: "intermediate table - contains the quantity and number of products for each order +  the the order details from stg_orders"
+    columns:
+      - name: order_guid
+        tests:
+          - unique
+          - not_null
+      - name: user_guid
+        tests:
+          - not_null
+      - name: total_items_in_order
+        tests:
+          - not_null

@@ -10,14 +10,13 @@
 }}
 
 SELECT
-  u.user_id
-  ,u.user_guid
+  u.user_guid
   ,u.first_name
   ,u.last_name
   ,u.email
   ,u.phone_number
   ,u.address_guid
-  ,u.created_at_utc
+  ,u.created_at_utc as user_created_at_utc
   ,u.updated_at_utc
   ,NOW()-u.created_at_utc as customer_tenure
   ,a.address
