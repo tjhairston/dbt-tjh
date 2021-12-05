@@ -31,9 +31,15 @@ WHERE name IS NOT NULL
 GROUP BY 1)
 
 SELECT 
-name, 
-total_sessions, 
-converted_sessions, 
-ROUND(converted_sessions/total_sessions*100,2) as conversion_rate 
-from rate_per_prod 
+    name, 
+    total_sessions, 
+    converted_sessions, 
+    ROUND(converted_sessions/total_sessions*100,2) as conversion_rate 
+FROM rate_per_prod 
 ORDER BY 3 desc
+
+# Results:
+<img width="307" alt="Screen Shot 2021-12-05 at 3 26 44 PM" src="https://user-images.githubusercontent.com/81575873/144762753-b354dfda-a88d-4bc1-be2a-900cb05fab3c.png">
+
+## Why might some products might be converting more than other?
+* There could be a number of reason why some products are converting more than othrs, maybe some items are discounted more, have more or more promo use or it could be as simple as soome products sell better. 
