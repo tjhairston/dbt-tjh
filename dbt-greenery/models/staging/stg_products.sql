@@ -1,7 +1,7 @@
 {{
   config(
     materialized='view',
-    unique_key='product_id'
+    unique_key='product_guid'
   )
 }}
 

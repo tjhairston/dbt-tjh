@@ -7,8 +7,8 @@
 
 SELECT
   product_guid
-  , name as product_name
-  , price
-  , quantity
+  ,name as product_name
+  ,price
+  ,quantity
   
 FROM {{ ref('stg_products') }}
