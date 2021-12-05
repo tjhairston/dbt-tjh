@@ -40,6 +40,9 @@ ORDER BY 3 desc
 
 # Results:
 <img width="307" alt="Screen Shot 2021-12-05 at 3 26 44 PM" src="https://user-images.githubusercontent.com/81575873/144762753-b354dfda-a88d-4bc1-be2a-900cb05fab3c.png">
+<<<<<<< HEAD
 
 ## Why might some products might be converting more than other?
 * There could be a number of reason why some products are converting more than othrs, maybe some items are discounted more, have more or more promo use or it could be as simple as soome products sell better. 
+=======
+>>>>>>> d017ec4511b81275122300d2fe8d0d3a9c84d5b6
