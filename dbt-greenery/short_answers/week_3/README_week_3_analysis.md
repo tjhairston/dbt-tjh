@@ -13,6 +13,7 @@ total_conversions, total_sessions, (round((total_conversions / total_sessions *1
 FROM con_rate
 
 # Results:
+
 | total_conversions | total_sessions | conversion_rate |
 |-------------------||---------------||----------------|
 |       400         ||     1108      ||     36.10      |
