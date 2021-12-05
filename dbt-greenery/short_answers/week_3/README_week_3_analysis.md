@@ -37,3 +37,6 @@ converted_sessions,
 ROUND(converted_sessions/total_sessions*100,2) as conversion_rate 
 from rate_per_prod 
 ORDER BY 3 desc
+
+# Results:
+<img width="307" alt="Screen Shot 2021-12-05 at 3 26 44 PM" src="https://user-images.githubusercontent.com/81575873/144762753-b354dfda-a88d-4bc1-be2a-900cb05fab3c.png">
