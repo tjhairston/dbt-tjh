@@ -16,8 +16,8 @@ FROM con_rate
 
 
 | total_conversions | total_sessions | conversion_rate |
-|-------------------||---------------||----------------|
-|       400         ||     1108      ||     36.10      |
+|-------------------|---------------|----------------|
+|       400         |     1108      |    36.10      |
 
 ## What is the conversion rate per product?
 # Query 
