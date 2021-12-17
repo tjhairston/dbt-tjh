@@ -1,0 +1,10 @@
+exposures:
+  - name: Product Funnel Analysis
+    description: Models that are critical to our product funnel dashboard
+    type: dashboard
+    maturity: low
+    owner: Taylor Hairston
+    url: www.xyz.com
+    email: taylor@greenery.com
+    depends_on:
+      - ref(‘product_funnel_rates_agg’)

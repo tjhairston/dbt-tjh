@@ -41,4 +41,14 @@
     |-------------------|---------------|----------------|
     |       696         |     609      |    400     |
 ### Analysis: 
-    * Users are moving through the funnel decently as mentioend, but there seems to be a high drop off off folks who visit the site and actaully view product pages. 
+    * Users are moving through the funnel decently as mentioend, but there seems to be a high drop off off folks who visit the site and actaully view product pages. The convertions between when a user views a product page to adding the item to thier cart is doing very well. There could be some funnel improvment around getting users to view a product. 
+
+### Reflection questions 
+    * If your organization is thinking about using dbt, how would you pitch the value of dbt/analytics engineering to a decision maker at your organization? 
+    - I would pitch the power of DBT via the power of having raw data avalible in the warehouse which puts power in transformtions; allowing for quick and easiy transformation for analysis. This can lead to a heap of downstream advantages. Without DBT it is hard for analyst to share work, and have visibility into what other analysts were working on. By using dbt and following best practices, we can eliminate a lot of these issues. dbt gives more power to analysts and Analytics Engineers. DBT enables analysts to work more like software engineers by following principles such as version control, code modularity, and collaboration. 
+    * if you are thinking about moving to analytics engineering, what skills have you picked that give you the most confidence in pursuing this next step? Leveraging SQL and git to effectively work and collaborate on a data team. I have also brushed up on my ability to model data in a way to optimize for modularity and a single source of truth. Lastly, I am building up my skills to eventually have the ability to visualize data in ways that make it more easily understandable and make time to insight faster
+
+    - 
+    * Setting up for production / scheduled dbt run of your project And finally, before you fly free into the dbt night, we will take a step back and reflect: after learning about the various options for dbt deployment and seeing your final dbt project, how would you go about setting up a production/scheduled dbt run of your project in an ideal state? You don’t have to actually set anything up - just jot down what you would do and why. 
+        * Hints: what steps would you have? Which orchestration tool(s) would you be interested in using? What schedule would you run your project on? Which metadata would you be interested in using? How/why would you use the specific metadata? , etc.
+    - I would tryu to leverage the entire modern data stack - using an ingestion tool (Fivetran, stitch) a modern datawarehouse (snowflake, big query, redshift) - DBT and a BI tool (looker). I would want to leverage some DAG tool also, airflow or dagster for to orchestrate my dbt deployment, even though this process will most likely be owned by thea data engineering team. I would leverage hooks and try to automate the process as much as possible. 
