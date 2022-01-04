@@ -11,10 +11,11 @@
 
 # Week 3 Project Instructions
 
-* The answers to project questions are in dbt-greenery/short_answers/week3/README_week_3_project.md
+* This week's submission will include Greenery’s conversion rates and product performance. I utilized created models, macro(s), hooks, and packages to answer questions around those mentioned items. 
 
 # Week 4 Project Instructions
 
+* This week's submission will include work around building and analyzing a product funnel. This is very representative of the type of data modeling work that happens within data organizations. 
 * The answers to project questions are in dbt-greenery/short_answers/week3/README_week_4_project.md
 
 # DAG
