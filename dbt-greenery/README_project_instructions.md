@@ -13,6 +13,10 @@
 
 * The answers to project questions are in dbt-greenery/short_answers/week3/README_week_3_project.md
 
+# Week 4 Project Instructions
+
+* The answers to project questions are in dbt-greenery/short_answers/week3/README_week_4_project.md
+
 # DAG
 <img width="1154" alt="dag_tj" src="https://user-images.githubusercontent.com/81575873/144765633-5ce5380c-3760-4cd7-8d47-c3f47abbd801.png">
 
